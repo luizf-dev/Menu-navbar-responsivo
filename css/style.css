@@ -67,7 +67,7 @@
   }
   
   .nav-list li {
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     margin-left: 32px;
   }
   
@@ -93,15 +93,16 @@
     .nav-list {
       position: absolute;
       top: 0;
-      right: 0;
-      width: 100vw;
-      height: 40vh;
+      left: 0;
+      width: 30vh;
+      height: 50vh;
       background: #fff;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      transform: translateY(-100%);
-      transition: transform 0.6s ease-in-out;
+      transform: translateX(-110%);
+      transition: transform 0.9s ease-in-out;
+      box-shadow: 5px 5px 10px #000;
     }
 
     .nav-list li {
@@ -114,17 +115,17 @@
   }
   
   .nav-list.active {
-    transform: translateY(12vh);
+    transform: translateX(-5vh);
   }
   
   @keyframes navLinkFade {
     from {
       opacity: 0;
-      transform: translateX(50px);
+      transform: translateX(0);
     }
     to {
-      opacity: 1;
-      transform: translateX(0);
+      opacity: 3;
+      transform: translateX(25px);
     }
   }
   
